@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<ul class="nav nav-tabs">
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+    <a [routerLink]="['/user']">Home</a></li>
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a  [routerLink]="['/userList']">User List</a></li>
+</ul>
+
+<router-outlet></router-outlet>
